@@ -32,13 +32,10 @@ public class ConsoleView {
                input = scanner.nextLine();
                if(input.equals("1")){
                    userView.runner();
-                   break;
                }else if(input.equals("2")){
                    postView.runner();
-                   break;
                }else if(input.equals("3")){
                    regionView.runner();
-                   break;
                }else if(input.equals("4")){
                    System.out.println("*** Thanks for using our program ***");
                    break;
