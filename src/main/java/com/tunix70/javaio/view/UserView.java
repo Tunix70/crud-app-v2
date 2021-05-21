@@ -39,31 +39,25 @@ public class UserView {
                     userController.save(createNewUser());
                     System.out.println("New Post successfully entered");
                     runner();
-                    break;
                 } else if (input.equals("2")) {
                     System.out.println(userController.getAll());
                     runner();
-                    break;
                 } else if (input.equals("3")) {
                     System.out.println("Enter the User number");
                     Long num = Long.parseLong(scanner.nextLine());
                     System.out.println(userController.getById(num));
                     runner();
-                    break;
                 } else if (input.equals("4")) {
                     userController.update(updateUser());
                     System.out.println("User successfully updated");
                     runner();
-                    break;
                 } else if (input.equals("5")) {
                     System.out.println("Enter the User number to delete");
                     Long num = Long.parseLong(scanner.nextLine());
                     System.out.println(userController.getById(num));
                     runner();
-                    break;
                 } else if (input.equals("6")) {
                     ConsoleView.mainMenu();
-                    break;
                 } else {
                     System.out.println("Please, enter numbers from 1 to 6");
                     menu();
